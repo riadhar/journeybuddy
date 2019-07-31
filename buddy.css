@@ -10,6 +10,26 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
   }
+  .quiz{
+    height: 850px;
+  width: 100%;
+  padding: 50px 50px;
+  }
+
+  .box{
+      background-color: #b5c9c2;
+    padding: 0px 50px;
+    color: white;
+    width: 50%;
+    height: 100%;
+  }
+  .size{
+    font-size: 15px
+  }
+.myCarousel{
+  padding: 100px 0px;
+}
+  }
   h4 {
     font-size: 19px;
     line-height: 1.375em;
@@ -32,7 +52,10 @@ body {
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding: 300px 100px;
+  }
+  .services{
+    padding:0px 0px;
   }
   .bg-grey {
     background-color: #f6f6f6;
@@ -91,6 +114,12 @@ body {
   .startbutton{
     width: 10%;
   }
+  .done{
+    width: 5%;
+  float:right;}
+
+
+
   .panel-heading {
     color: #fff !important;
     background-color: #86baab !important;
@@ -144,7 +173,7 @@ body {
     color: #86baab;
   }
   .slideanim {visibility:hidden;}
-  .slide {
+  .slie {
     animation-name: slide;
     -webkit-animation-name: slide;
     animation-duration: 1s;

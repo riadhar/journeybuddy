@@ -59,83 +59,115 @@
 
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>TRAVEL SURVEY</h2>
-  <h4>Take this quick quiz so we can create an itinerary fit to your preferences.</h4>
-      <div>
-          <label>What place do you like to visit!</label>
-          <select>
-            <option>Chicago, IL</option>
-            <option>OR, FL</option>
-            <option>LA, CA</option>
-            <option>CAN, MX</option>
-          </select>
-          <br>
-
-          <div>
-  <input size="16" type="text" value="Enter Date Here">
-  <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23d0d0d0&amp;ctz=America%2FChicago&amp;src=cmlhZGhhcjAzQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23795548&amp;color=%2333B679&amp;showPrint=0&amp;showCalendars=1&amp;showTabs=0&amp;showNav=1&amp;showTitle=0" style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
-  <span><i></i></span>
-</div>
-        </div>
+<div id="services" class="quiz">
+<div class="row">
+  <div class="col-sm-6">
+    <center>
+      <center>
+        <div class = "box">
+        <h1>TRAVEL SURVEY</h1>
+      <h3>Take this quick quiz so we can create an itinerary fit to your preferences.</h3>
+    </div>
+    </center>
+  </div>
+  <div class="col-sm-6">
+    <div id="myCarousel" class="carousel slide text-center">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+<div class = "size">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>What place are you visiting?<br><span>
+        <select>
+          <option>Chicago, IL</option>
+          <option>Orlando, FL</option>
+          <option>Los Angeles, CA</option>
+          <option>Cancun, MX</option>
+        </select>
+      </span></h4>
         <br>
-        <div>
-          <label> Budget Range</label>
-          <select multiple>
-            <option>0-$500</option>
-            <option>$500-$1,000</option>
-            <option>$1,000-$10,000</option>
-            <option>$10,000-?</option>
-          </select>
-          <br>
-          <label>Indoor or Outdoors?</label>
-          <br>
+      </div>
+      <div class="item">
+        <h4>What is the length of your trip?<br><span><div>
+          <iframe src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%2386baab&amp;ctz=America%2FChicago&amp;src=MzdlMHUxNTRhbDJwZW1rNnBqMWFnY2Y5N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;title=JourneyBuddy&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH" style="border-width:0" width="450" height="250" frameborder="0" scrolling="no"></iframe>
+          </div></span></h4>
+      </div>
+      <div class="item">
+        <h4>What is your budget for this trip?<br><span>
           <select>
-            <option>Indoor</option>
-            <option>Outdoor</option>
+            <option>0-$200</option>
+            <option>$200-$500</option>
+            <option>$500-$1,000</option>
+            <option>$1,000+</option>
           </select>
+        </span></h4>
+      </div>
+      <div class="item">
+        <h4>What type of activities would you be interested in?"<br><span><label>
+          <p><input type="checkbox"> &ensp; Relax</p>
+        </label>
+        <br>
+        <label>
+          <p><input type="checkbox"> &ensp; Thrill</p>
+        </label>
+        <br>
+        <label>
+          <p><input type="checkbox"> &ensp; Adventure</p>
+        </label>
+        <br>
+        <label>
+          <p>&emsp;<input type="checkbox"> &ensp; Historical</p>
+        </label>
+        <br></span></h4>
+      </div>
+      <div class="item">
+        <h4>Which meals do you plan on eating out?<br><span><label>
+            <p><input type="checkbox"> &ensp; Breakfast</p>
+          </label>
           <br>
-          Interests in Location
-<label>Relax
-  <input type="checkbox" checked>
-  <span></span>
-</label>
-
-<label>Thrill
-  <input type="checkbox">
-  <span></span>
-</label>
-
-<label>Adventure
-  <input type="checkbox">
-  <span></span>
-</label>
-
-<label> Historical
-  <input type="checkbox">
-  <span></span>
-</label>
-<br>
-<br>
-Meals You Would Like To Eat Out
-<label>Breakfast
-<input type="checkbox" checked>
-<span></span>
-</label>
-
-<label>Lunch
-<input type="checkbox">
-<span></span>
-</label>
-
-<label>Dinner
-<input type="checkbox">
-<span></span>
-</label>
-
-<br>
-<br>
+          <label>
+            <p><input type="checkbox"> &ensp; Lunch</p>
+          </label>
+          <br>
+          <label>
+            <p><input type="checkbox"> &ensp; Dinner</p>
+          </label>
+          <br></span></h4>
 </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </center>
+  </div>
+</div>
+    <div class="done">
+    <form>
+
+      <div class="input-group">
+      <div class="input-group-btn navbar" >
+        <a href="#portfolio"<button type="button" class="btn btn-default">DONE</button></a>
+      </div>
+    </div>
+    </div>
+  </form>
+  </div>
+</div>
+
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
@@ -198,7 +230,7 @@ Meals You Would Like To Eat Out
     </a>
   </div>
 </div>
-
+</div>
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="container-fluid">
   <div class="text-center">
