@@ -124,6 +124,12 @@ body {
     margin-top: 500px;
 }
 
+.date{
+  font-size: 12px;
+}
+.start{
+  margin-bottom: 10px;
+}
 
 
 .date{
@@ -229,3 +235,4 @@ body {
       font-size: 150px;
     }
   }
+glyphicon
