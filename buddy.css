@@ -13,15 +13,18 @@ body {
   .quiz{
     height: 850px;
   width: 100%;
-  padding: 50px 50px;
+  padding: 250px 0px;
   }
-
+.itinerary{
+  float:left;
+}
   .box{
       background-color: #b5c9c2;
-    padding: 0px 50px;
+    padding: 0px 0px;
     color: white;
-    width: 50%;
-    height: 100%;
+    width: 75%;
+    height: 200%;
+    margin-top: 60px;
   }
   .size{
     font-size: 15px
@@ -52,7 +55,7 @@ body {
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 300px 100px;
+    padding: 40px 100px;
   }
   .services{
     padding:0px 0px;
@@ -116,8 +119,19 @@ body {
   }
   .done{
     width: 5%;
-  float:right;}
+    position: absolute;
+    left: 1250px;
+    margin-top: 500px;
+}
 
+
+
+.date{
+  font-size: 12px;
+}
+.start{
+  margin-bottom: 10px;
+}
 
 
   .panel-heading {

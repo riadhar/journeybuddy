@@ -32,3 +32,14 @@ $(document).ready(function(){
     });
   });
 })
+
+function myInfo(){
+  var city = document.getElementById("city").value;
+  document.getElementById("demo").innerHTML = city;
+
+  var budget = document.getElementById("budget").value;
+  document.getElementById("demo1").innerHTML = budget;
+
+  var relax = document.getElementById("relax").value;
+  document.getElementById("demo2").innerHTML = relax;
+}
