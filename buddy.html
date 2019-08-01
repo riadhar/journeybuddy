@@ -99,8 +99,8 @@
           <iframe src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%2386baab&amp;ctz=America%2FChicago&amp;src=MzdlMHUxNTRhbDJwZW1rNnBqMWFnY2Y5N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;title=JourneyBuddy&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH" style="border-width:0" width="450" height="250" frameborder="0" scrolling="no"></iframe>
           <form action="/action_page.php">
             <div class = "date">
-            <div class="start"> Start Date: <input type="text" name="StartDate" value="Month/Date/Year"><br></div>
-            <div calss="end">End Date: <input type="text" name="EndDate" value="Month/Date/Year"><br></div>
+            <div class="start"> Start Date: <input type="text" name="StartDate" placeholder="Month/Date/Year"><br></div>
+            <div calss="end">End Date: <input type="text" name="EndDate" placeholder="Month/Date/Year"><br></div>
           </div>
           </form>
         </div></span></h4>
@@ -178,40 +178,13 @@
   </div>
 </div>
 
-<!-- Start Maggie-->
-
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>PHOTOS</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Cancun</strong></p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>LA</strong></p>
-        <p>OR</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>CHI</strong></p>
-      </div>
-    </div>
-  </div><br>
-
   <h2>Activites/Food</h2>
 
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active">
-        <img src= "la.jpg">
+      <!--  <img src= "la.jpg"> -->
       </li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -221,11 +194,14 @@
 
     <div class="carousel-inner" role="listbox">
       <div class="item active">
+
+        <img src="la.jpg" "width=100" "height=100">
         <h4>"Los Angeles in California!"<br><span>Beaches are breath-taking for relaxation. So many types of drinks to enjoy.</span></h4>
-      
+
       </div>
       <div class="item">
         <h4>"Cancun in Mexico"<br><span>The food is delicous, and ethtic. The sunset, especially, is beautiful to horseback. </span></h4>
+        <img src="cancun.jpg">
       </div>
       <div class="item">
         <h4>"Disney world in Orlando!"<br><span>There are so much to enjoy with your family and friends.<div> There are so many rollercoasters, spas, and importantly food!</div></span></h4>
@@ -364,9 +340,8 @@
       <strong><h3>Web Developers:</h3></strong>
       <p>Ria Dhar, Vigna Gajarla, Magdalena Medina, Mary Glover</p>
       <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
     </div>
-    </div><br>
+  </div><br><br><br><br>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
@@ -377,7 +352,8 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <br>
+          <button class="btn btn-default centered" type="submit">Send</button>
         </div>
       </div>
     </div>
@@ -386,13 +362,13 @@
 
 
 <!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+  <br>
+  <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
 </footer>
 </body>
 </html>
