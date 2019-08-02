@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="buddy.js"></script>
+
+  <script type="text/javascript" src="buddy.js"></script>
   <link href="buddy.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -60,17 +61,16 @@
 
 <!-- Container (Services Section) -->
 <div id="services" class="quiz">
-<div class="row">
-  <div class="col-sm-6">
-    <center>
+  <div>
+  <center>
       <center>
         <div class = "box">
         <h1>TRAVEL SURVEY</h1>
       <h3>Take this quick quiz so we can create an itinerary fit to your preferences.</h3>
     </div>
     </center>
-  </div>
-  <div class="col-sm-6">
+
+
     <div id="myCarousel" class="carousel slide text-center">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -78,7 +78,6 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 <div class = "size">
     <!-- Wrapper for slides -->
@@ -99,8 +98,8 @@
           <iframe src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%2386baab&amp;ctz=America%2FChicago&amp;src=MzdlMHUxNTRhbDJwZW1rNnBqMWFnY2Y5N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;title=JourneyBuddy&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH" style="border-width:0" width="450" height="250" frameborder="0" scrolling="no"></iframe>
           <form action="/action_page.php">
             <div class = "date">
-            <div class="start"> Start Date: <input type="text" name="FirstName" value="Month/Date/Year"><br></div>
-            <div calss="end">End Date: <input type="text" name="LastName" value="Month/Date/Year"><br></div>
+            <div class = "start"> Start Date: <input id = "start1" type="text" name="FirstName" value="Month/Date/Year"><br></div>
+            <div class = "end">End Date: <input id = "end1" type="text" name="LastName" value="Month/Date/Year"><br></div>
           </div>
           </form>
         </div></span></h4>
@@ -108,45 +107,39 @@
       <div class="item">
         <h4>What is your budget for this trip?<br><span>
           <select id="budget">
-            <option>0-$200</option>
-            <option >$200-$500</option>
+            <option>$0-$500</option>
             <option >$500-$1,000</option>
             <option >$1,000+</option>
           </select>
         </span></h4>
       </div>
       <div class="item">
-        <h4>What type of activities would you be interested in?"<br><span><label>
-          <p><input type="checkbox" id = "relax"> &ensp; Relax</p>
-        </label>
-        <br>
-        <label>
-          <p><input type="checkbox"> &ensp; Thrill</p>
-        </label>
-        <br>
-        <label>
-          <p><input type="checkbox" > &ensp; Adventure</p>
-        </label>
-        <br>
-        <label>
-          <p>&emsp;<input type="checkbox"> &ensp; Historical</p>
-        </label>
-        <br></span></h4>
-      </div>
-      <div class="item">
-        <h4>Which meals do you plan on eating out?<br><span><label>
-            <p><input type="checkbox"> &ensp; Breakfast</p>
-          </label>
-          <br>
-          <label>
-            <p><input type="checkbox"> &ensp; Lunch</p>
-          </label>
-          <br>
-          <label>
-            <p><input type="checkbox"> &ensp; Dinner</p>
-          </label>
-          <br></span></h4>
+        <h4>Are you interested in relaxation activities?<br><span>
+          <select id="relax">
+            <option>yes</option>
+            <option >no</option>
+          </select>
+        </span></h4>
+        <h4>Are you interested in thrill activities?<br><span>
+          <select id="thrill">
+            <option>yes</option>
+            <option >no</option>
+          </select>
+        </span></h4>
+        <h4>Are you interested in adventure activities?<br><span>
+          <select id="adventure">
+            <option>yes</option>
+            <option >no</option>
+          </select>
+        </span></h4>
+        <h4>Are you interested in historical activities?<br><span>
+          <select id="historical">
+            <option>yes</option>
+            <option >no</option>
+          </select>
+        </span></h4>
 </div>
+
       </div>
     </div>
     <!-- Left and right controls -->
@@ -160,7 +153,7 @@
     </a>
     </center>
   </div>
-</div>
+
     <div class="done">
     <form>
 
@@ -171,39 +164,64 @@
     </div>
     </form>
     </div>
-
+</div>
   </div>
 </div>
-
+</div>
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Itinerary</h2><br>
   <h4>Choose the activities that interest you from what we have provided for you.</h4>
-  <h5>****PLACE (START - END)****</h5>
+  <h5><div id = "demo"></div>(<div id = "demo6"></div> - <div id = "demo7"></div>)</h5>
 <div class="itinerary">
   <h5>ACTIVITIES<h5>
-    <h6><p><input type="checkbox"> &ensp; BLA</p>
+    <!---input type=button name="button1" value="Show Activities" onclick="getActivities('Chicago, IL', '$0-$500')"--->
+
+    <h6><p id="activity1"><input type="checkbox"> &ensp; activity1</p>
     <br>
-      <p><input type="checkbox"> &ensp; BLAH</p>
+      <p id= "activity2"><input type="checkbox" > &ensp; activity2</p>
     <br>
-      <p><input type="checkbox"> &ensp; BLA</p>
-    <br></h6>
+      <p id= "activity3"><input type="checkbox"> &ensp; activity3</p>
+    <br>
+    <p id= "activity4"><input type="checkbox" > &ensp; activity4</p>
+  <br>
+  <p id= "activity5"><input type="checkbox" > &ensp; activity5</p>
+<br>
+<p id= "activity6"><input type="checkbox" > &ensp; activity6</p>
+<br>
+<p id= "activity7"><input type="checkbox" > &ensp; activity7</p>
+<br>
+<p id= "activity8"><input type="checkbox" > &ensp; activity8</p>
+<br>
+<p id= "activity9"><input type="checkbox" > &ensp; activity9</p>
+<br>
+<p id= "activity10"><input type="checkbox" > &ensp; activity10</p>
+<br>
+<p id= "activity11"><input type="checkbox" > &ensp; activity11</p>
+<br>
+<p id= "activity12"><input type="checkbox" > &ensp; activity12</p>
+<br>
+  </h6>
   <h5>RESTAURANTS<h5>
-    <h6><p><input type="checkbox"> &ensp; BLA</p>
+    <!---input type=button name="button1" value="Show Restaurants" onclick="getResturants()"---->
+    <h6><p><input type="checkbox" > &ensp;Option 1:<p id= "restaurant1"></p></p>
     <br>
-      <p><input type="checkbox"> &ensp; BLAH</p>
+      <p><input type="checkbox" > &ensp;Option 2:<p id= "restaurant2"></p></p>
     <br>
-      <p><input type="checkbox"> &ensp; BLA</p>
+      <p ><input type="checkbox" > &ensp;Option 3:<p id= "restaurant3"></p></p>
+
     <br></h6>
 </div>
-<p id = "demo"></p>
 <p id = "demo1"></p>
 <p id = "demo2"></p>
+<p id = "demo3"></p>
+<p id = "demo4"></p>
+<p id = "demo5"></p>
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid>
+<div id="contact" class="container-fluid">
   <h2 class="text-center">About Us</h2>
   <div class="row">
     <div class="col-sm-10">

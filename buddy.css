@@ -11,9 +11,12 @@ body {
     margin-bottom: 30px;
   }
   .quiz{
-    height: 850px;
+  background-size: 200px 0px;
+  height: 850px;
   width: 100%;
-  padding: 250px 0px;
+  background-color: white;
+  padding: 20px 0px;
+
   }
 .itinerary{
   float:left;
@@ -121,10 +124,8 @@ body {
     width: 5%;
     position: absolute;
     left: 1250px;
-    margin-top: 500px;
+    margin-top: 30px;
 }
-
-
 
 .date{
   font-size: 12px;
