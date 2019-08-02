@@ -99,9 +99,9 @@
           <iframe src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%2386baab&amp;ctz=America%2FChicago&amp;src=MzdlMHUxNTRhbDJwZW1rNnBqMWFnY2Y5N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;title=JourneyBuddy&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH" style="border-width:0" width="450" height="250" frameborder="0" scrolling="no"></iframe>
           <form action="/action_page.php">
             <div class = "date">
-            <div class="start"> Start Date: <input type="text" name="StartDate" placeholder="Month/Date/Year"><br></div>
-            <div calss="end">End Date: <input type="text" name="EndDate" placeholder="Month/Date/Year"><br></div>
-          </div>
+           <div class = "start"> Start Date: <input id = "start1" type="text" name="FirstName" value="Month/Date/Year"><br></div>
+           <div class = "end">End Date: <input id = "end1" type="text" name="LastName" value="Month/Date/Year"><br></div>
+         </div>
           </form>
         </div></span></h4>
       </div>
@@ -166,182 +166,182 @@
     </form>
     </div>
 </div>
-  </div>
-</div>
-  <h2>Activites/Food</h2>
-
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active">
-      <!--  <img src= "la.jpg"> -->
-      </li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-
-        <img src="la.jpg" "width=100" "height=100">
-        <h4>"Los Angeles in California!"<br><span>Beaches are breath-taking for relaxation. So many types of drinks to enjoy.</span></h4>
-
-      </div>
-      <div class="item">
-        <h4>"Cancun in Mexico"<br><span>The food is delicous, and ethtic. The sunset, especially, is beautiful to horseback. </span></h4>
-        <img src="cancun.jpg">
-      </div>
-      <div class="item">
-        <h4>"Disney world in Orlando!"<br><span>There are so much to enjoy with your family and friends.<div> There are so many rollercoasters, spas, and importantly food!</div></span></h4>
-      </div>
-    </div>
-
-
-    <!-- Left and right controls -->
-
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-</div>
-
-<!-- Container (Pricing Section) -->
-
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- End Maggie->
-
 
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Itinerary</h2>
   <h4>Choose the activities that interest you from what we have provided for you.</h4>
-      <h5><div id = "demo"></div>(<div class= "demo6" id = "demo6"></div> - <div class= "demo7" id = "demo7"></div>)</h5>
+  <h5><div class = "demo" id = "demo"></div>  <div class= "demo1" id = "demo1"><br></div>(<div class = "demo6" id = "demo6"></div> - <div class = "demo7" id = "demo7"></div>)</h5>
+
+
 <div class="itinerary">
   <h5>ACTIVITIES<h5>
     <!---input type=button name="button1" value="Show Activities" onclick="getActivities('Chicago, IL', '$0-$500')"--->
-
     <h6>
-        <p id="activity1"><input type="checkbox"> &ensp; activity1</p>
-      <br>
-        <p id= "activity2"><input type="checkbox" > &ensp; activity2</p>
-      <br>
-        <p id= "activity3"><input type="checkbox"> &ensp; activity3</p>
-      <br>
-        <p id= "activity4"><input type="checkbox" > &ensp; activity4</p>
-      <br>
-        <p id= "activity5"><input type="checkbox" > &ensp; activity5</p>
-      <br>
-        <p id= "activity6"><input type="checkbox" > &ensp; activity6</p>
-      <br>
-        <p id= "activity7"><input type="checkbox" > &ensp; activity7</p>
-      <br>
-        <p id= "activity8"><input type="checkbox" > &ensp; activity8</p>
-      <br>
-        <p id= "activity9"><input type="checkbox" > &ensp; activity9</p>
-      <br>
-        <p id= "activity10"><input type="checkbox" > &ensp; activity10</p>
-      <br>
-        <p id= "activity11"><input type="checkbox" > &ensp; activity11</p>
-      <br>
-        <p id= "activity12"><input type="checkbox" > &ensp; activity12</p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity1"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity2"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity3"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity4"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity5"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity6"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+    <p style="margin: 0; display: inline;">
+      <div class="row">
+        <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+        <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity7"></div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </p>
+  </p>
+    <p style="margin: 0; display: inline;">
+      <div class="row">
+        <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+        <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity8"></div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </p>
+  </p>
+    <p style="margin: 0; display: inline;">
+      <div class="row">
+        <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+        <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity9"></div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </p>
+  </p>
+    <p style="margin: 0; display: inline;">
+      <div class="row">
+        <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+        <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity10"></div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </p>
+  </p>
+    <p style="margin: 0; display: inline;">
+      <div class="row">
+        <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+        <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity11"></div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </p>
+  </p>
+    <p style="margin: 0; display: inline;">
+      <div class="row">
+        <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+        <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "activity12"></div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+    </p>
+  </p>
+  <h6>
+      <!-- <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity1"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity2"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity3"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity4"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity5"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity6"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity7"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity8"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity9"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity10"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity11"></p></p>
+
+        <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity12"></p></p> -->
     <br>
     </h6>
   <h5>RESTAURANTS<h5>
     <!---input type=button name="button1" value="Show Restaurants" onclick="getResturants()"---->
-    <h6><p><input type="checkbox" > &ensp;Option 1:<p id= "restaurant1"></p></p>
-    <br>
-      <p><input type="checkbox" > &ensp;Option 2:<p id= "restaurant2"></p></p>
-    <br>
-      <p ><input type="checkbox" > &ensp;Option 3:<p id= "restaurant3"></p></p>
+    <h6>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "restaurant1"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "restaurant2"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+      <p style="margin: 0; display: inline;">
+        <div class="row">
+          <div class="col-sm-4"><input type="checkbox"> &ensp; </div>
+          <div class="col-sm-4"><p style="margin: 0; display: inline;" id= "restaurant3"></div>
+          <div class="col-sm-4">.col-sm-4</div>
+        </div>
+      </p>
+    </p>
+    <h6>
+       <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "restaurant1"></p></p>
+
+      <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "restaurant2"></p></p>
+
+      <p ><p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "restaurant3"></p></p>
 
     <br></h6>
 </div>
-<p id = "demo1"></p>
-<p id = "demo2"></p>
+<!-- <p id = "demo2"></p>
 <p id = "demo3"></p>
 <p id = "demo4"></p>
-<p id = "demo5"></p>
+<p id = "demo5"></p> -->
+
 </div>
 
 <!-- Container (Contact Section) -->

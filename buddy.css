@@ -134,6 +134,15 @@ body {
 .demo7{
   display: inline-block;
 }
+
+.demo{
+  display: inline-block;
+}
+
+.restaurant1
+{
+  display: inline-block;
+}
 .date{
   font-size: 12px;
 }
