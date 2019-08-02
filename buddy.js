@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 92161ed6ac4a365b2f6be239eeb060aeb49e5fa5
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -111,16 +106,12 @@ function getActivities(city, budget,relax,thrill,adventure,historical){
       document.getElementById("activity1").innerHTML ="The Chicago Theatre"
       document.getElementById("activity2").innerHTML ="The Peninsula Spa"
       document.getElementById("activity3").innerHTML ="Oxygen Spa"
-<<<<<<< HEAD
     } else {
       document.getElementById("activity1").innerHTML =""
       document.getElementById("activity2").innerHTML =""
       document.getElementById("activity3").innerHTML =""
     }
 
-=======
-    }
->>>>>>> 92161ed6ac4a365b2f6be239eeb060aeb49e5fa5
     if (thrill=="yes"){
       document.getElementById("activity4").innerHTML ="Six Flags Great America"
       document.getElementById("activity5").innerHTML ="IFly"
