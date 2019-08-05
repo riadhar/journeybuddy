@@ -1,3 +1,5 @@
+
+
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -10,10 +12,23 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
   }
+  .column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
   .quiz{
-    height: 850px;
+  background-size: 200px 0px;
+  height: 850px;
   width: 100%;
-  padding: 250px 0px;
+  background-color: white;
+  padding: 20px 0px;
+
   }
 .itinerary{
   float:left;
@@ -121,17 +136,14 @@ body {
     width: 5%;
     position: absolute;
     left: 1250px;
-    margin-top: 500px;
+    margin-top: 30px;
 }
-
-.date{
-  font-size: 12px;
+.demo6{
+  display: inline-block;
 }
-.start{
-  margin-bottom: 10px;
+.demo7{
+  display: inline-block;
 }
-
-
 .date{
   font-size: 12px;
 }
