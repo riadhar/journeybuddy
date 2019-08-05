@@ -4,7 +4,8 @@ body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
-  }
+  margin-right:50;
+}
   h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -31,7 +32,12 @@ body {
 
   }
 .itinerary{
-  float:left;
+  float:center;
+  width:110%;
+}
+.kewl{
+  margin: 0px 0px;
+  margin-right: 100px;
 }
   .box{
       background-color: #b5c9c2;
@@ -47,14 +53,44 @@ body {
 .myCarousel{
   padding: 100px 0px;
 }
-  }
+
   h4 {
     font-size: 19px;
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
+
+
+.accept{
+  width:10%;
+  float:right;
+  padding:20px;
+  margin-bottom:20px;
+  margin-top:5px;
+  margin-right:130px;
+}
+
+  h5{
+    font-size: 23px;
+    line-height: 1.375em;
+    color: #4d736c;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: -15px;
+    float:left;
+    width:100%;
+    padding:0px;
+  }
+  h6{
+    font-size: 18px;
+    line-height: 1.375em;
+    color: #8d8f8e;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
   .centered{
     position:absolute;
     top:50%;
@@ -70,7 +106,7 @@ body {
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 40px 100px;
+    padding: 20px 100px;
   }
   .services{
     padding:0px 0px;
@@ -87,7 +123,7 @@ body {
     font-size: 200px;
   }
   .thumbnail {
-    padding: 0 0 15px 0;
+    padding: 0 0 0px 0;
     border: none;
     border-radius: 0;
   }
@@ -116,6 +152,13 @@ body {
   .item span {
     font-style: normal;
   }
+  .row{
+  background-color: #dedede;
+  border: 5px solid #f6f6f6;
+  padding: 10px;
+  text-align: left;
+  margin:0px;
+}
   .panel {
     border: 1px solid #86baab;
     border-radius:0 !important;
