@@ -3,13 +3,13 @@
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
-    color: darkred;
+    color: #818181;
   margin-right:50;
 }
   h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #009999;
+    color: #303030;
     font-weight: 600;
     margin-bottom: 30px;
   }
@@ -44,8 +44,8 @@ body {
 }
 
   .box{
-      background-color: lightblue;
-    padding: 0px 0px;
+      background-color: #b5c9c2;
+    padding: 5px 5px;
     color: white;
     width: 100%;
     height: 200%;
@@ -63,7 +63,7 @@ body {
   h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: brown;
+    color: #303030;
     font-weight: 400;
     margin-bottom: 5px;
   }
@@ -81,7 +81,7 @@ body {
   h5{
     font-size: 23px;
     line-height: 1.375em;
-    color: black;
+    color: #275669;
     font-weight: 600;
     float:left;
     width:100%;
@@ -124,7 +124,7 @@ body {
   }
   .jumbotron {
     background-image: url("beach.jpg");
-    color: white;
+    color: #fff;
     background-repeat: no-repeat;
     background-size: 1600px 900px;
     padding: 355px 25px;
@@ -259,7 +259,7 @@ body {
   }
   .navbar {
     margin-bottom: 0;
-    background-color: #336699;
+    background-color: #0b282e;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -359,26 +359,3 @@ body {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
   }
-  #overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  #text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-  }s
