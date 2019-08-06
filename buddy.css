@@ -28,25 +28,31 @@ body {
   height: 850px;
   width: 100%;
   background-color: white;
-  padding: 20px 0px;
-
+  padding: 40px 50px;
+  }
+  .kat{
+    margin:50px;
   }
 .itinerary{
   float:center;
   width:110%;
 }
 .kewl{
-  margin: 0px 0px;
-  margin-right: 100px;
+  margin-top: -30px;
+  margin-right: 125px;
+  color: #275669;
 }
+
   .box{
       background-color: lightblue;
     padding: 0px 0px;
     color: white;
-    width: 75%;
+    width: 100%;
     height: 200%;
-    margin-top: 60px;
+    float:center;
   }
+
+
   .size{
     font-size: 15px
   }
@@ -77,18 +83,37 @@ body {
     line-height: 1.375em;
     color: black;
     font-weight: 600;
-    margin-top: 5px;
-    margin-bottom: -15px;
     float:left;
     width:100%;
-    padding:0px;
+    margin-top:-20px;
   }
+.format{
+  margin-top:30px;
+}
+.format2{
+  font-size: 23px;
+  line-height: 1.375em;
+  color: #275669;
+  font-weight: 600;
+  float:left;
+  width:100%;
+  margin-top:10px;
+}
+  hr{
+  display: block;
+  margin:0.1;}
   h6{
     font-size: 18px;
     line-height: 1.375em;
     color: #8d8f8e;
     font-weight: 600;
     margin-bottom: 5px;
+  }
+  h7{
+    float:left;
+    color: white;
+    margin:5px;
+    font-size: 21px;
   }
 
   .centered{
@@ -106,7 +131,13 @@ body {
     font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-    padding: 20px 100px;
+    padding: 50px 50px;
+  }
+  .container-fluid2{
+    padding-bottom:600px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:100px;
   }
   .services{
     padding:0px 0px;
@@ -179,12 +210,9 @@ body {
     width: 5%;
     position: absolute;
     left: 1250px;
-    margin-top: 30px;
+    margin-top: -100px;
 }
 .demo6{
-  display: inline-block;
-}
-.demo7{
   display: inline-block;
 }
 
@@ -298,6 +326,15 @@ body {
     .logo {
       font-size: 150px;
     }
+  .demo25{
+    text-align:left;
+  }
+  .demo26{
+    float:left;
+  }
+  li,ul{
+    float:left;
+  }
   }
   #overlay {
     position: fixed;
@@ -322,3 +359,26 @@ body {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
   }
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }s
