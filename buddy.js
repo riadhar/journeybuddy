@@ -300,6 +300,17 @@ function getActivities(city, budget,relax,thrill,adventure,historical){
     }
   }
 }
+
+
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
 //   if city=="Chicago, IL"{
 //     if budget=="$0-$500"{
 //       document.getElementById("restaurant1").innerHTML ="Portillos"
