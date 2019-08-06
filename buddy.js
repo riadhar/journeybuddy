@@ -298,15 +298,130 @@ function getActivities(city, budget,relax,thrill,adventure,historical){
   }
 }
 
-
-
-function on() {
-  document.getElementById("overlay").style.display = "block";
+var final = [];
+var finalrest=[];
+function myFinal(){
+  var checkbox1 = document.getElementById("checkbox1");
+// If the checkbox is checked, display the output text
+if (checkbox1.checked == true){
+  var act1 = document.getElementById("activity1").innerText;
+  final.push(act1);
 }
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
+
+var checkbox2 = document.getElementById("checkbox2");
+if (checkbox2.checked == true){
+  var act2 = document.getElementById("activity2").innerText;
+  final.push(act2);
 }
+
+var checkbox3 = document.getElementById("checkbox3");
+if (checkbox3.checked == true){
+  var act3 = document.getElementById("activity3").innerText;
+  final.push(act3);
+}
+
+var checkbox4 = document.getElementById("checkbox4");
+if (checkbox4.checked == true){
+  var act4 = document.getElementById("activity4").innerText;
+  final.push(act4);
+}
+
+var checkbox5 = document.getElementById("checkbox5");
+if (checkbox5.checked == true){
+  var act1 = document.getElementById("activity1").innerText;
+  final.push(act1);
+}
+
+var checkbox6 = document.getElementById("checkbox6");
+if (checkbox6.checked == true){
+  var act6 = document.getElementById("activity6").innerText;
+  final.push(act6);
+}
+
+var checkbox7 = document.getElementById("checkbox7");
+if (checkbox7.checked == true){
+  var act7 = document.getElementById("activity7").innerText;
+  final.push(act7);
+}
+
+
+var checkbox8 = document.getElementById("checkbox8");
+if (checkbox8.checked == true){
+  var act8 = document.getElementById("activity8").innerText;
+  final.push(act8);
+}
+
+var checkbox9 = document.getElementById("checkbox9");
+if (checkbox9.checked == true){
+  var act9 = document.getElementById("activity9").innerText;
+  final.push(act9);
+}
+
+var checkbox10 = document.getElementById("checkbox10");
+if (checkbox10.checked == true){
+  var act10 = document.getElementById("activity10").innerText;
+  final.push(act10);
+}
+
+var checkbox11 = document.getElementById("checkbox11");
+if (checkbox11.checked == true){
+  var act11 = document.getElementById("activity11").innerText;
+  final.push(act11);
+}
+
+var checkbox12 = document.getElementById("checkbox12");
+if (checkbox12.checked == true){
+  var act12 = document.getElementById("activity12").innerText;
+  final.push(act12);
+}
+
+var checkbox13 = document.getElementById("checkbox13");
+if (checkbox13.checked == true){
+  var rest1 = document.getElementById("restaurant1").innerText;
+  finalrest.push(rest1);
+}
+
+
+var checkbox14 = document.getElementById("checkbox14");
+if (checkbox14.checked == true){
+  var rest2 = document.getElementById("restaurant2").innerText;
+  finalrest.push(rest2);
+}
+
+var checkbox15 = document.getElementById("checkbox15");
+if (checkbox15.checked == true){
+  var rest3 = document.getElementById("restaurant3").innerText;
+  finalrest.push(rest3);
+}
+
+actlen = final.length;
+text1 = "<ul>";
+for (i = 0; i < actlen; i++) {
+  text1 += "<li>" + final[i] + "</li>";
+}
+text1 += "</ul>";
+
+document.getElementById("demo25").innerHTML = text1;
+
+restlen = finalrest.length;
+text2 = "<ul>";
+for (i = 0; i < restlen; i++) {
+  text2 += "<li>" + finalrest[i] + "</li>";
+}
+text2 += "</ul>";
+
+document.getElementById("demo26").innerHTML=text2;
+
+}
+
+function on(){
+  document.getElementById("overlay").style.display="block";
+}
+function off(){
+  document.getElementById("overlay").style.display="none";
+}
+
 
 //   if city=="Chicago, IL"{
 //     if budget=="$0-$500"{
