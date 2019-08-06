@@ -52,7 +52,7 @@ body {
     float:center;
   }
 
-
+x
   .size{
     font-size: 15px
   }
@@ -98,6 +98,10 @@ body {
   float:left;
   width:100%;
   margin-top:10px;
+}
+
+.print{
+  font-family: Montserrat, sans-serif;
 }
   hr{
   display: block;
@@ -211,6 +215,11 @@ body {
     position: absolute;
     left: 1250px;
     margin-top: -100px;
+}
+
+.printsave{
+  width: 3%;
+  margin-top: 20px;
 }
 .demo6{
   display: inline-block;
