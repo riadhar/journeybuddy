@@ -329,8 +329,8 @@ if (checkbox4.checked == true){
 
 var checkbox5 = document.getElementById("checkbox5");
 if (checkbox5.checked == true){
-  var act1 = document.getElementById("activity1").innerText;
-  final.push(act1);
+  var act5 = document.getElementById("activity5").innerText;
+  final.push(act5);
 }
 
 var checkbox6 = document.getElementById("checkbox6");

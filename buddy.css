@@ -220,6 +220,7 @@ x
 .printsave{
   width: 3%;
   margin-top: 20px;
+  margin-left: 1205px;
 }
 .demo6{
   display: inline-block;
@@ -335,6 +336,9 @@ x
     .logo {
       font-size: 150px;
     }
+  @media print {
+  .noprint {display:none;}
+  }
   .demo25{
     text-align:left;
   }
@@ -358,7 +362,11 @@ x
     z-index: 2;
     cursor: pointer;
   }
-
+h8{
+  font-size: 20;
+  color: #275669;
+  font-weight: 600;
+}
   #text{
     position: absolute;
     top: 50%;
