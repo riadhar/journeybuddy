@@ -194,6 +194,9 @@ x
   text-align: left;
   margin:0px;
 }
+.refresh{
+    margin-left: 1280px;
+}
   .panel {
     border: 1px solid #86baab;
     border-radius:0 !important;
