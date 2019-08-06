@@ -1,63 +1,63 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Journey Buddy</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <head>
+    <!-- Theme Made By www.w3schools.com -->
+    <title>Journey Buddy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="buddy.js"></script>
-  <link href="buddy.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="buddy.js"></script>
+    <link href="buddy.css" rel="stylesheet" type="text/css">
 
-</head>
-<body>
+  </head>
+  <body>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">• explore the world •</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#services">TRAVEL SURVEY</a></li>
-        <li><a href="#portfolio">ITINERARY</a></li>
-        <li><a href="#pricing">ACCEPT AND PRINT</a></li>
-        <li><a href="#contact">ABOUT US</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron text-center" >
-  <h1>JOURNEYBUDDY</h1>
-
-  <div class="centered"><img src="dash.png" width=1250px height=600px></div>
-  <center>
-    <div class="startbutton">
-    <form>
-
-      <div class="input-group">
-      <div class="input-group-btn navbar" >
-        <a href="#services"<button type="button" class="btn btn-default">get started</button></a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">• explore the world •</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#services">TRAVEL SURVEY</a></li>
+            <li><a href="#portfolio">ITINERARY</a></li>
+            <li><a href="#pricing">ACCEPT AND PRINT</a></li>
+            <li><a href="#contact">ABOUT US</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
 
-  </form>
-  </div>
-  </center>
-</div>
+    <div class="jumbotron text-center" >
+      <h1>JOURNEYBUDDY</h1>
+
+      <div class="centered"><img src="dash.png" width=1250px height=600px></div>
+      <center>
+        <div class="startbutton">
+        <form>
+
+          <div class="input-group">
+          <div class="input-group-btn navbar" >
+            <a href="#services"<button type="button" class="btn btn-default">get started</button></a>
+          </div>
+        </div>
+
+      </form>
+      </div>
+      </center>
+    </div>
 
 
 <!-- Container (Services Section) -->
@@ -66,10 +66,10 @@
   <center>
       <center>
         <div class = "box">
-        <h1>TRAVEL SURVEY</h1>
-      <h3>Take this quick quiz so we can create an itinerary fit to your preferences.</h3>
-    </div>
-    </center>
+          <h1>TRAVEL SURVEY</h1>
+          <h3>Take this quick quiz so we can create an itinerary fit to your preferences.</h3>
+        </div>
+      </center>
 
 
     <div id="myCarousel" class="carousel slide text-center">
@@ -80,66 +80,70 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
-<div class = "size">
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>What place are you visiting?<br><span>
-        <select id="city">
-          <option>Chicago, IL</option>
-          <option>Orlando, FL</option>
-          <option>Los Angeles, CA</option>
-          <option>Cancun, MX</option>
-        </select>
-      </span></h4>
-        <br>
-      </div>
-      <div class="item">
-        <h4>What is the length of your trip?<br><span><div>
-          <iframe src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%2386baab&amp;ctz=America%2FChicago&amp;src=MzdlMHUxNTRhbDJwZW1rNnBqMWFnY2Y5N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;title=JourneyBuddy&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH" style="border-width:0" width="450" height="250" frameborder="0" scrolling="no"></iframe>
-          <form action="/action_page.php">
-            <div class = "date">
-           <div class = "start"> Start Date: <input id = "start1" type="text" name="FirstName" value="Month/Date/Year"><br></div>
-           <div class = "end">End Date: <input id = "end1" type="text" name="LastName" value="Month/Date/Year"><br></div>
-         </div>
-          </form>
-        </div></span></h4>
-      </div>
-      <div class="item">
-        <h4>What is your budget for this trip?<br><span>
-          <select id="budget">
-            <option>$0-$500</option>
-            <option >$500-$1,000</option>
-            <option >$1,000+</option>
+
+    <div class = "size">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>What place are you visiting?<br><span>
+          <select id="city">
+            <option>Chicago, IL</option>
+            <option>Orlando, FL</option>
+            <option>Los Angeles, CA</option>
+            <option>Cancun, MX</option>
           </select>
-        </span></h4>
-      </div>
-      <div class="item">
-        <h4>Are you interested in relaxation activities?<br><span>
-          <select id="relax">
-            <option>yes</option>
-            <option >no</option>
-          </select>
-        </span></h4>
-        <h4>Are you interested in thrill activities?<br><span>
-          <select id="thrill">
-            <option>yes</option>
-            <option >no</option>
-          </select>
-        </span></h4>
-        <h4>Are you interested in adventure activities?<br><span>
-          <select id="adventure">
-            <option>yes</option>
-            <option >no</option>
-          </select>
-        </span></h4>
-        <h4>Are you interested in historical activities?<br><span>
-          <select id="historical">
-            <option>yes</option>
-            <option >no</option>
-          </select>
-        </span></h4>
-</div>
+          </span></h4>
+          <br>
+        </div>
+
+        <div class="item">
+          <h4>What is the length of your trip?<br><span><div>
+            <iframe src="https://calendar.google.com/calendar/embed?height=250&amp;wkst=1&amp;bgcolor=%2386baab&amp;ctz=America%2FChicago&amp;src=MzdlMHUxNTRhbDJwZW1rNnBqMWFnY2Y5N3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;title=JourneyBuddy&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH" style="border-width:0" width="450" height="250" frameborder="0" scrolling="no"></iframe>
+            <form action="/action_page.php">
+              <div class = "date">
+             <div class = "start"> Start Date: <input id = "start1" type="text" name="FirstName" value="Month/Date/Year"><br></div>
+             <div class = "end">End Date: <input id = "end1" type="text" name="LastName" value="Month/Date/Year"><br></div>
+           </div>
+            </form>
+          </div></span></h4>
+        </div>
+
+        <div class="item">
+          <h4>What is your budget for this trip?<br><span>
+            <select id="budget">
+              <option>$0-$500</option>
+              <option >$500-$1,000</option>
+              <option >$1,000+</option>
+            </select>
+          </span></h4>
+        </div>
+
+        <div class="item">
+          <h4>Are you interested in relaxation activities?<br><span>
+            <select id="relax">
+              <option>yes</option>
+              <option >no</option>
+            </select>
+          </span></h4>
+          <h4>Are you interested in thrill activities?<br><span>
+            <select id="thrill">
+              <option>yes</option>
+              <option >no</option>
+            </select>
+          </span></h4>
+          <h4>Are you interested in adventure activities?<br><span>
+            <select id="adventure">
+              <option>yes</option>
+              <option >no</option>
+            </select>
+          </span></h4>
+          <h4>Are you interested in historical activities?<br><span>
+            <select id="historical">
+              <option>yes</option>
+              <option >no</option>
+            </select>
+          </span></h4>
+        </div>
 
       </div>
     </div>
@@ -152,9 +156,12 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-    </center>
+
+  </div>
+  </center>
   </div>
 </div>
+
     <div class="done">
       <div id="overlay" onclick="off()">
         <div id="text"><img src="https://media.giphy.com/media/Rhf9UVfypACPLFChmh/giphy.gif" height="300" width="300">
@@ -168,13 +175,11 @@
     </div>
     </div>
 
-
-
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Itinerary</h2>
   <h4>Choose the activities that interest you from what we have provided for you.</h4>
-  <h6><div class = "demo" id = "demo"></div>&ensp;&ensp;<div class= "demo" id = "demo1"><br></div>&ensp;&ensp;<div class = "demo6" id = "demo6"></div> - <div class = "demo6" id = "demo7"></div></h6>
+  <h6><div class = "demo" id = "demo"></div>&ensp;&ensp;<div class= "demo" id = "demo1"><br></div>&ensp;&ensp;<div class = "demo6" id = "demo6"></div> - <div class = "demo6" id="demo7"></div></h6>
 
   <div class = "format"><h5>ACTIVITIES</h5><br></div>
   <div class="itinerary">
@@ -267,14 +272,9 @@
       </p>
     </p></div>
     </div>
-      <!---input type=button name="button1" value="Show Activities" onclick="getActivities('Chicago, IL', '$0-$500')"--->
-
-
-
-
-
   </h6>
 </div>
+
   <!-- <h6>
       <p style="margin: 0; display: inline;"><input type="checkbox"> &ensp; <p style="margin: 0; display: inline;" id= "activity1"></p></p>
 
@@ -343,12 +343,6 @@
     <br></h6> -->
 </div>
 
-
-
-<!-- <p id = "demo2"></p>
-<p id = "demo3"></p>
-<p id = "demo4"></p>
-<p id = "demo5"></p> -->
 
 <div class="accept">
     <div class="input-group ">

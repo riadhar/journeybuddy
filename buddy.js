@@ -43,16 +43,12 @@ function myInfo(){
   getResturants(city,budget);
 
   var relax = document.getElementById("relax").value;
-  //document.getElementById("demo2").innerHTML = relax;
 
   var thrill = document.getElementById("thrill").value;
-  //document.getElementById("demo3").innerHTML = thrill;
 
   var adventure = document.getElementById("adventure").value;
-  //document.getElementById("demo4").innerHTML = adventure;
 
   var historical = document.getElementById("historical").value;
-  //document.getElementById("demo5").innerHTML = historical;
 
   getActivities(city, budget,relax,thrill,adventure,historical);
 
